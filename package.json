@@ -4,12 +4,7 @@
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "pelger/generator-seneca-http",
-  "author": {
-    "name": "Peter Elger",
-    "email": "",
-    "url": "https://github.com/pelger"
-  },
+  "author": "Peter Elger (https://github.com/pelger)",
   "scripts": {
     "test": "mocha"
   },
@@ -26,5 +21,16 @@
   },
   "devDependencies": {
     "mocha": "*"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apparatus/generator-seneca-http.git"
+  },
+  "bugs": {
+    "url": "https://github.com/apparatus/generator-seneca-http/issues"
+  },
+  "homepage": "https://github.com/apparatus/generator-seneca-http#readme"
 }
