@@ -12,7 +12,8 @@
     "node": "*"
   },
   "dependencies": {
-    "seneca": "^0.7.1"
+    "seneca": "^0.7.1",
+    "seneca-env-plugins": "0.0.0"
   },
   "repository": {
     "private": true

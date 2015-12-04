@@ -1,6 +1,7 @@
 'use strict';
 
 var seneca = require('seneca')();
+seneca.use('env-plugins');
 
 seneca.add({role: 'service1', cmd: 'action1'}, function(args, callback) {
   callback(null, {data: 'data'});
