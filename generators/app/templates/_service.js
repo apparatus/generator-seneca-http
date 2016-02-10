@@ -17,7 +17,7 @@ seneca.add({role: '<%= name %>', cmd: 'action2'}, function(args, callback) {
 });
 
 <% if (transport === 'redis') { %>
-seneca.listen({type: 'redis-queue', pin: 'role:db,cmd:*'})
+seneca.listen({type: 'redis-queue'})
 <% } else { %>
 seneca.listen({host: process.env.SERVICE_HOST, port: process.env.SERVICE_PORT});
 <% } %>
