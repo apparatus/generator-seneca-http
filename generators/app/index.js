@@ -7,14 +7,19 @@ module.exports = yeoman.generators.Base.extend({
 
   writing: {
     app: function () {
-      this.fs.copy(
+      var opts = {
+        name: this.options.name || 'NAME_ME',
+        transport: this.options.transport || 'http'
+      };
+      this.fs.copyTpl(
         this.templatePath('_package.json'),
-        this.destinationPath('package.json')
+        this.destinationPath('package.json'),
+        opts
       );
       this.fs.copyTpl(
         this.templatePath('_service.js'),
         this.destinationPath('service.js'),
-        {name: this.options.name || 'NAME_ME'}
+        opts
       );
       this.fs.copy(
         this.templatePath('_README.md'),
